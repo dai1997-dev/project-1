@@ -1,0 +1,104 @@
+:root {
+    --white-color: #fff;
+    --text-color: #505050;
+    --strong-text-color: #212121;
+    --primary-color: #3fd0d4;
+    --header-height: 80px;
+}
+
+@font-face  {
+    font-family: 'Satisfy', cursive;
+    src: url(/asset/font/font/Satisfy-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 50%;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px grey;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(var(--primary-color), rgb(247, 47, 170));
+} 
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.open { 
+    display: flex !important;
+    opacity: 1;
+}
+
+@keyframes ZoomIn  {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes SlideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Heading section */
+
+.heading-section {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.heading-1-section {
+    font-family: 'Satisfy', cursive;;
+    color: var(--primary-color);
+    font-size: 3.4rem;
+    font-weight: 300;
+}
+
+.heading-2-section {
+    font-size: 6.5rem;
+    line-height: 1;
+    letter-spacing: -1px;
+    word-spacing: -8px;
+}
+
+.heading__sologan-section {
+    font-size: 2.1rem;
+    line-height: 2.8rem;
+    margin-top: 18px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+
